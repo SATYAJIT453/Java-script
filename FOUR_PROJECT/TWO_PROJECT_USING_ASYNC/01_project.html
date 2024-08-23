@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    // setTimeout(function(){
+    //     console.log('satyajit')
+    // },5000)
+
+
+    // const name=function(){
+    //     console.log('satyajit')
+    // }
+
+    // setTimeout(name,5000)
+
+    // const changehtml=function(){
+    //     document.querySelector('h1').innerHTML='Best JS Series'
+    // }
+
+    // setTimeout(changehtml,5000)
+
+
+    //here the work is before change the innerhtml if we click the stop button then the inner html can't change
+
+    const changehtml=function(){
+        document.querySelector('h1').innerHTML='Best JS Series'
+    }
+
+    const ch=setTimeout(changehtml,5000)
+    document.getElementById('stop').addEventListener('click',function(){
+        clearTimeout(ch)
+    })
+
+    
+
+</script>
+
+
+</html>

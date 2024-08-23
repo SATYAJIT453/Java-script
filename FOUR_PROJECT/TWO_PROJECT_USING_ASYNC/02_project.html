@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+  const name=function(){
+    console.log('satyajit',Date.now())
+  }
+
+//   const interval=setInterval(name,1000)          //it will continiously print the name in 1 sec gap to gap
+
+//   document.getElementById('stop').addEventListener('click',function(){
+//     clearInterval(interval)
+//     console.log('STOPPED')
+//   })
+  document.getElementById('start').addEventListener('click',function(){
+    const interval=setInterval(name,1000)
+    document.getElementById('stop').addEventListener('click',function(){
+    clearInterval(interval)
+    console.log('STOPPED')
+  })
+    
+    
+  })
+  
+
+</script>
+
+
+</html>
